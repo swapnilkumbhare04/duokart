@@ -36,14 +36,14 @@ Proven end to end: `ord-000049` (both inboxes same mail) → `ord-000050` (split
 
 **Linux:**
 ```
-git clone <your-fork> && cd duokart
+git clone https://github.com/swapnilkumbhare04/duokart.git && cd duokart
 python3 -m venv venv && source venv/bin/activate && pip install -r app/requirements.txt
 cp .env.example .env && cd app && ../venv/bin/gunicorn -w 2 -b 0.0.0.0:5000 app:app
 ```
 
 **Windows (PowerShell):**
 ```
-git clone <your-fork>; cd duokart
+git clone https://github.com/swapnilkumbhare04/duokart.git; cd duokart
 py -m venv venv; .\venv\Scripts\Activate.ps1; pip install -r app\requirements.txt
 copy .env.example .env; cd app; ..\venv\Scripts\flask --app app run
 ```
